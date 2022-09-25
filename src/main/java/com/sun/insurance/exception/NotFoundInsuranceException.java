@@ -5,14 +5,14 @@ import org.springframework.http.HttpStatus;
 public class NotFoundInsuranceException extends RuntimeException  {
 
 	private static final long serialVersionUID = 1L;
-	HttpStatus status;
-	String message;
+	HttpStatus errorCode;
+	String errorMessage;
 	
-	
-	public NotFoundInsuranceException(HttpStatus status, String message) {
-		this.status = status;
-		this.message = message;
+	public NotFoundInsuranceException(HttpStatus errorCode, String errorMessage) {
+		super(errorMessage);
+		this.errorCode = errorCode;
 	}
 	
+		
 	
 }
