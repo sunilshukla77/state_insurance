@@ -14,7 +14,7 @@ public class InsuranceService {
 	
 	public InsuranceDetail getMappedInsurance(int id){
 		if(id>4){
-			throw new NotFoundInsuranceException(HttpStatus.NOT_FOUND, "Insurance does not exist");
+			throw new NotFoundInsuranceException(HttpStatus.NOT_FOUND, "Insurance id incorrect or id does not exist");
 		}
 		return getQuote().get(id);
 	}

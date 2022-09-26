@@ -20,4 +20,6 @@ public class InsuranceController {
 	public InsuranceDetail getInsurance(@RequestParam(value = "id") int id) {
 		return insuranceService.getMappedInsurance(id);
 	}
+	
+	
 }

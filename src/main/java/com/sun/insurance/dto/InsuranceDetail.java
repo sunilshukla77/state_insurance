@@ -1,6 +1,5 @@
 package com.sun.insurance.dto;
 
-
 public class InsuranceDetail{
 
 	private final int id;
