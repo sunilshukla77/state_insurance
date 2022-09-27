@@ -8,8 +8,13 @@ push " git push
 Pistman URL: 
 http://localhost:8080/insurance?id=2
 
-
 1. Create Controller package and Class-> When we send request this is our request landing class.
 2. Create DTO (Data transfer Object) -> Request response object.
 3. Create Service package and Class -> Bussness logic : Database operation, thirdparty connection, authorization
 4. Created exception package and class-> Handle Globale exception. @ContorllerAdvice
+	Exception scenario we can handle 3 way: try catch block, throws, throw
+	a`. Global exception handler in spring boot we should use @ControllerAdivce
+	b. Step1. Create a class and annotate @ControllerAdivce
+	c. Create method use @ExceptionHandler as a paraimer RuntimeException Class
+	d. created Custome RuntimeException Class.
+	e. throw the exception;
